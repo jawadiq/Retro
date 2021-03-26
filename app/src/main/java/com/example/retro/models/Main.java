@@ -1,4 +1,6 @@
-package com.example.retro;
+package com.example.retro.models;
+
+import com.example.retro.models.Currently;
 
 public class Main {
   double latitude ;

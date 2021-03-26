@@ -1,4 +1,4 @@
-package com.example.retro;
+package com.example.retro.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
