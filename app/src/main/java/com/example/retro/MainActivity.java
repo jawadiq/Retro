@@ -113,15 +113,11 @@ public class MainActivity extends AppCompatActivity {
                     if (response.code() == 200) {
                         Main main = response.body();
                         city.setText(main.getTimezone());
-                        DateFormat df = null;
-                        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
-                            df = new SimpleDateFormat("mm:HH ", Locale.getDefault());
-                        }
-                        if (df != null) {
-                            int time = main.getCurrently().getTime();
+
+
                             textView.append("Time: " + unitTimeToDate(main.getCurrently().getTime()));
                             textView.append(System.getProperty("line.separator"));
-                        }
+
                         textView.append("Summary " + main.getCurrently().getSummary());
                         textView.append(System.getProperty("line.separator"));
                         textView.append("Percip Type " + main.getCurrently().getPrecipIntensity().toString());
