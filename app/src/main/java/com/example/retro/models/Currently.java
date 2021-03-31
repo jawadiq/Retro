@@ -31,11 +31,11 @@ public class Currently {
 
     private Double windGust;
 
-    private Integer windBearing;
+    private Double windBearing;
 
     private Double cloudCover;
 
-    private Integer uvIndex;
+    private Double uvIndex;
 
     private double visibility;
 
@@ -145,11 +145,11 @@ public class Currently {
         this.windGust = windGust;
     }
 
-    public Integer getWindBearing() {
+    public Double getWindBearing() {
         return windBearing;
     }
 
-    public void setWindBearing(Integer windBearing) {
+    public void setWindBearing(Double windBearing) {
         this.windBearing = windBearing;
     }
 
@@ -161,11 +161,11 @@ public class Currently {
         this.cloudCover = cloudCover;
     }
 
-    public Integer getUvIndex() {
+    public Double getUvIndex() {
         return uvIndex;
     }
 
-    public void setUvIndex(Integer uvIndex) {
+    public void setUvIndex(Double uvIndex) {
         this.uvIndex = uvIndex;
     }
 
